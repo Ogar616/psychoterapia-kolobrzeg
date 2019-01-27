@@ -17,3 +17,18 @@ img {
 .nav {
     font-weight: bold;
 }
+.navbar-header {
+    margin-right: -90px !important;
+}
+.navbar-toggle {
+    position: relative;
+    right: 70px;
+}
+.logo {
+    width: 60%;
+    position: relative;
+    top: -10px;
+}
+.jumbotron {
+    text-align: center;
+}

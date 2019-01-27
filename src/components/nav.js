@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavButton from "./navButton";
 import navLinks from "./data/navLinks";
 
+import img from '../assets/logo4.png';
+
 class Nav extends Component {
   handleNavClick = i => {
     navLinks.forEach(e => {
@@ -50,7 +52,7 @@ class Nav extends Component {
               <span className="icon-bar" />
             </button>
             <li className="navbar-brand" onClick={this.handleBrandClick}>
-              <Link to="/home"> Psychoterapeuta - Psycholog</Link>
+              <Link to="/home"> <img className='logo' src={img} alt='logo'/></Link>
             </li>
           </div>
           <div
