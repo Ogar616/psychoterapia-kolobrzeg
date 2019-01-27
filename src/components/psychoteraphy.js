@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Psycho extends Component {
+class Psycho extends Component {
   render() {
     return <>
          <div className="page-header">
@@ -15,6 +15,27 @@ Psychoterapeuta rozmawia z pacjentem o jego uczuciach, myślach, fantazjach, sna
 <h3>
 WSKAZANIA DO PODJECIA PSYCHOTERAPII
         </h3>
+        depresja,
+nerwica,
+problemy ze snem,
+zaburzenia jedzenia,
+obawy i lęki,
+natrętne myśli lub czynności,
+nadmierna podatność na choroby, obniżona odporność bez wyraźnej przyczyny,
+poczucie prześladowania, bycia obserwowanym,
+trudności w porozumiewaniu się z innymi,
+kryzys małżeński lub partnerski,
+przeżycie traumatycznej sytuacji,
+nieradzenie sobie z emocjami,
+poczucie niewykorzystywania swoich możliwości,
+potrzeba rozwoju i poznania siebie,
+zaniżona samoocena,
+nadmierny krytycyzm wobec siebie lub innych,
+nieodnajdywanie poczucia sensu swojego istnienia,
+ogólne niezadowolenie z jakości życia,
+bóle głowy, brzucha, pleców lub kręgosłupa o nieustalonej przyczynie lub związane z silnymi emocjami,
     </>;
   }
 }
+
+export default Psycho;

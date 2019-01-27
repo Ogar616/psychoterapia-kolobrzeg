@@ -1,8 +1,38 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-export default class Nav extends Component {
+import NavButton from "./navButton";
+import navLinks from "./data/navLinks";
+
+class Nav extends Component {
+  handleNavClick = i => {
+    navLinks.forEach(e => {
+      e.active = false;
+    });
+    navLinks[i].active = true;
+
+    document
+      .getElementsByClassName("navbar-collapse")[0]
+      .classList.remove("show");
+  };
+  handleBrandClick = () => {
+    navLinks.forEach(e => {
+      e.active = false;
+    });
+  };
   render() {
+    const nav = navLinks.map((e, i) => {
+      return (
+        <NavButton
+          isActive={e.active}
+          handleClick={this.handleNavClick.bind(this, i)}
+          index={i}
+          key={i}
+        />
+      );
+    });
+    const navLeft = nav.filter((e, i) => i < 3);
+    const navRight = nav.filter((e, i) => i > 2);
     return (
       <nav className="navbar navbar-default">
         <div className="container-fluid">
@@ -19,41 +49,21 @@ export default class Nav extends Component {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <li className="navbar-brand">
-            <Link to="/about"> Psychoterapeuta - Psycholog
-              </Link>
+            <li className="navbar-brand" onClick={this.handleBrandClick}>
+              <Link to="/home"> Psychoterapeuta - Psycholog</Link>
             </li>
           </div>
-
           <div
             className="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1"
           >
-            <ul className="nav navbar-nav">
-              <li className="active">
-              <Link to="/about">O mnie
-              </Link>
-              </li>
-              <li>
-              <Link to="/offer">Oferta</Link>
-              </li>
-              <li>
-              <Link to="/psychoteraphy">O psychoterapia</Link>
-              </li>
-              
-            </ul>
-            
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-              <Link to="/location">Jak dojadę?</Link>
-              </li>
-              <li>
-              <Link to="/contact">Kontakt</Link>
-              </li>
-            </ul>
+            <ul className="nav navbar-nav">{navLeft}</ul>
+            <ul className="nav navbar-nav navbar-right">{navRight}</ul>
           </div>
         </div>
       </nav>
     );
   }
 }
+
+export default Nav;

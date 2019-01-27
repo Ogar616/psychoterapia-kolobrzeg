@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Location extends Component {
+ class Location extends Component {
   render() {
     return <>
          <div className="page-header">
@@ -9,3 +9,5 @@ export default class Location extends Component {
     </>;
   }
 }
+
+export default Location;
