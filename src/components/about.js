@@ -13,10 +13,8 @@ class About extends Component {
         </div>
         <div className="panel panel-default">
           <div className="panel-body">
-            <ul className="list-group">
-            <p>
-            Więcej informacji na mój temat
-            </p>
+            <ul className="rolldown-list" id="myList">
+          
               {list}
             </ul>
           </div>
