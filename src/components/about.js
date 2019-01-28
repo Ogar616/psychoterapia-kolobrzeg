@@ -1,24 +1,19 @@
 import React, { Component } from "react";
 
-import ListItem from './listItem';
-import listItems from './data/listItemsAbout';
+import ListItem from "./listItem";
+import listItems from "./data/listItemsAbout";
+import runAnimation from "./runAnimation";
 
 class About extends Component {
+  componentDidMount() {
+    runAnimation();
+  }
   render() {
-    const list = listItems.map((e, i) => <ListItem text={e.text} key={i}/>);
+    const list = listItems.map((e, i) => <ListItem text={e.text} key={i} />);
     return (
       <>
-        <div className="page-header">
-          <h1>O mnie </h1>
-        </div>
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <ul className="rolldown-list" id="myList">
-          
-              {list}
-            </ul>
-          </div>
-        </div>
+        <h1>O mnie </h1>
+        <ul className="rolldown-list">{list}</ul>
       </>
     );
   }

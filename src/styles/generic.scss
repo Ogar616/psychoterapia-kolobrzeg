@@ -1,93 +1,112 @@
 #root {
-    font-family: 'Roboto';
+  font-family: "Roboto";
 }
 .btn {
-    margin-right: 20px;
-
+  margin-right: 20px;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 .footer {
-    margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.6rem;
+  background-color: #eee;
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  position: fixed;
+  bottom: 0;
 }
 .nav {
-    font-weight: bold;
+  font-weight: bold;
+  overflow: hidden;
 }
 .navbar-header {
-    margin-right: -90px !important;
+  margin-right: -90px !important;
 }
 .navbar-toggle {
-    position: relative;
-    right: 70px;
+  position: relative;
+  right: 70px;
 }
 .logo {
-    width: 60%;
-    position: relative;
-    top: -10px;
+  width: 60%;
+  position: relative;
+  top: -10px;
 }
 .jumbotron {
-    text-align: center;
-    h1{
-        margin-top: 0;
-    }
+  text-align: center;
+  h1 {
+    margin-top: 0;
+  }
 }
-.page-header {
-    text-align: center;
-    font-size: 3rem;
+h1 {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.2em;
+  border-radius: 5px;
 }
-
-
-
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h3 {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+.description {
+  background-color: #eee;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 2em;
+  border-radius: 5px;
+  line-height: 1.5em;
+}
 
 .rolldown-list {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .rolldown-list li {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  li {
+    background-color: #f8f8f8;
     padding: 1em;
-    margin-bottom: .125em;
+    margin-bottom: 0.125em;
     display: block;
     list-style: none;
-    // text-transform: uppercase;
-  }
-  
-  .rolldown-list li {
     visibility: hidden;
-    animation: rolldown .7s 1;
+    animation: rolldown 0.7s 1;
     transform-origin: 50% 0;
     animation-fill-mode: forwards;
+    text-align: center;
   }
-  
-  .rolldown-list li {
-    background-color: #F8F8F8;
-  }
-  
-  #myList {
-    position: relative;
-    width: 80%; 
-    left: 10%;
+}
 
+@keyframes rolldown {
+  0% {
+    visibility: visible;
+    transform: rotateX(180deg) perspective(500px);
   }
-  
+  70% {
+    visibility: visible;
+    transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotateX(0deg);
+  }
+}
 
-  
-  @keyframes rolldown {
-    0% {
-      visibility: visible;
-      transform: rotateX(180deg) perspective(500px);
-    }
-    70% {
-      visibility: visible;
-      transform: rotateX(-20deg);
-    }
-    100% {
-      visibility: visible;
-      transform: rotateX(0deg);
-    }
-  }
+.sticky {
+  width: 95%;
+  position: fixed;
+  top: 0;
+}

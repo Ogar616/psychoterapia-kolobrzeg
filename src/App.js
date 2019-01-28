@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 
 const App = () => (
   <Router>
+    <>
     <div className="container">
       <Jumbotron />
       <Nav />
@@ -23,8 +24,10 @@ const App = () => (
       <Route path="/psychoteraphy" component={Psycho} />
       <Route path="/Contact" component={Contact} />
       <Route path="/location" component={Location} />
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   </Router>
 );
 
