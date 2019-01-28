@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <div className="footer">
             Gabinet Psychologiczny i Psychoterapeutyczny Edyta Łuców-Stepczyńska
-            © 2015
+            © 2019
       </div>
     );
   }
