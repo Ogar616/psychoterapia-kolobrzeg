@@ -1,0 +1,26 @@
+nav {
+  background-color: $primary;
+  font-weight: bold;
+  overflow: hidden;
+  .navbar-header {
+    background-color: $primary;
+    margin-right: -90px !important;
+  }
+  .navbar-toggle {
+    position: relative;
+    right: 70px;
+  }
+  .logo {
+    width: 60%;
+    position: relative;
+    top: -10px;
+  }
+  .active a {
+    background-color: $secondary !important;
+  }
+}
+.sticky {
+  width: 95%;
+  position: fixed;
+  top: 0;
+}

@@ -1,0 +1,33 @@
+.rolldown-list {
+  position: relative;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  li {
+    background-color: $primary;
+    padding: 1em;
+    margin-bottom: 0.125em;
+    display: block;
+    list-style: none;
+    visibility: hidden;
+    animation: rolldown 0.7s 1;
+    transform-origin: 50% 0;
+    animation-fill-mode: forwards;
+    text-align: center;
+  }
+}
+@keyframes rolldown {
+  0% {
+    visibility: visible;
+    transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotateX(0deg);
+  }
+}

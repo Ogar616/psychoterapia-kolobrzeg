@@ -3,7 +3,6 @@ $theme: bluee;
 $primary: #f8f8f8;
 $secondary: #eee;
 
-
 @if $theme == blue {
   $primary: lightblue;
   $secondary: lightgreen;
