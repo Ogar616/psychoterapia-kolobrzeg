@@ -2,4 +2,4 @@ const text1 = 'Psychoterapeuta rozmawia z pacjentem o jego uczuciach, myślach, 
 
 const text2 = 'Depresja, nerwica, problemy ze snem, zaburzenia jedzenia, obawy i lęki, natrętne myśli lub czynności, nadmierna podatność na choroby, obniżona odporność bez wyraźnej przyczyny, poczucie prześladowania, bycia obserwowanym, trudności w porozumiewaniu się z innymi, kryzys małżeński lub partnerski, przeżycie traumatycznej sytuacji, nieradzenie sobie z emocjami, poczucie niewykorzystywania swoich możliwości, potrzeba rozwoju i poznania siebie, zaniżona samoocena, nadmierny krytycyzm wobec siebie lub innych, nieodnajdywanie poczucia sensu swojego istnienia, ogólne niezadowolenie z jakości życia, bóle głowy, brzucha, pleców lub kręgosłupa o nieustalonej przyczynie lub związane z silnymi emocjami'
 
-export {text1, text2}
+export { text1, text2 };
