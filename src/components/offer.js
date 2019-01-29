@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import listItems from "./data/offerItemsList";
 import diseasesList from "./data/diseasesItemsList";
 import ListItem from "./listItem";
-import runAnimation from "./runAnimation";
+import runAnimation from "./data/runAnimation";
 
 const list = listItems.map((e, i) => <ListItem text={e.text} key={i} />);
 const list2 = diseasesList.map((e, i) => (
