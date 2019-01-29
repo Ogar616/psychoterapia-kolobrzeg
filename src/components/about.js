@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import ListItem from "./listItem";
-import listItems from "./data/listItemsAbout";
+import listItems from "./data/aboutItemsList";
 import runAnimation from "./runAnimation";
 
 class About extends Component {
@@ -13,7 +13,7 @@ class About extends Component {
     return (
       <>
         <h1>O mnie </h1>
-        <ul className="rolldown-list">{list}</ul>
+        <ul className="rolldown-list-small">{list}</ul>
       </>
     );
   }

@@ -5,7 +5,6 @@ import TextArea from "./formComponents/textArea";
 
 const FormContainer = () => (
   <div className="container">
-    <h1>Napisz do mnie</h1>
     <div className="row row-flex">
       <form
         className="form-group"

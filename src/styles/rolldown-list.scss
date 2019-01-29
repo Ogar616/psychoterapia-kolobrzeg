@@ -1,14 +1,11 @@
-.rolldown-list {
+@mixin list {
   position: relative;
-  width: 100%;
-  border: 1px solid lightgray;
   border-radius: 5px;
   overflow: hidden;
   li {
     background-color: $primary;
     padding: 1em;
     margin-bottom: 0.125em;
-    display: block;
     list-style: none;
     visibility: hidden;
     animation: rolldown 0.7s 1;
@@ -17,6 +14,17 @@
     text-align: center;
   }
 }
+.rolldown-list {
+  @include list;
+  width: 100%;
+}
+.rolldown-list-small {
+  @include list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @keyframes rolldown {
   0% {
     visibility: visible;
