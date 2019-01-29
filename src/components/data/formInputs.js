@@ -3,41 +3,41 @@ export default [
         type: 'hidden',
         name: '_language',
         value: 'pl',
-        title: '',
+        title: undefined,
         placeholder: ''
     },
     {
         type: 'hidden',
         name: '_subject',
         value: 'New submission!',
-        title: '',
+        title: undefined,
         placeholder: ''
     },
     {
         type: 'text',
-        name: 'imie',
-        value: '',
+        name: 'Imię',
+        value: undefined,
         title: 'Imię',
         placeholder: ''
     },
     {
         type: 'text',
-        name: 'nazwisko',
-        value: '',
+        name: 'Nazwisko',
+        value: undefined,
         title: 'Nazwisko',
         placeholder: ''
     },
     {
         type: 'text',
-        name: 'mobile',
-        value: '',
+        name: 'Numer telefonu',
+        value: undefined,
         title: 'Numer telefonu',
         placeholder: ''
     },
     {
         type: 'email',
-        name: '_replyto',
-        value: '',
+        name: 'Odpowiedz do',
+        value: undefined,
         title: 'E-mail',
         placeholder: ''
     },

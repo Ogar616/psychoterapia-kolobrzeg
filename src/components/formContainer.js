@@ -29,7 +29,7 @@ class FormContainer extends Component {
             <TextArea
               title={"Twoja wiadomość"}
               rows={6}
-              name={"message"}
+              name={"Wiadomość do Ciebie"}
               placeholder={"Tu wpisz swoją wiadomość"}
             />
             <Button title="Wyślij wiadomość">
