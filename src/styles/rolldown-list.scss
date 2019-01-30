@@ -2,6 +2,7 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  z-index: 1;
   li {
     background-color: $primary;
     padding: 1em;

@@ -3,6 +3,7 @@ nav {
   background-color: $primary;
   font-weight: bold;
   overflow: hidden;
+  z-index: 2;
   .navbar-header {
     background-color: $primary;
     margin-right: -90px !important;
