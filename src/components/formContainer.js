@@ -5,13 +5,14 @@ import TextArea from "./formComponents/textArea";
 
 import formInputs from "./data/formInputs";
 
-const inputs = formInputs.map(e => (
+const inputs = formInputs.map((e, i) => (
   <Input
     type={e.type}
     name={e.name}
     value={e.value}
     title={e.title}
     placeholder={e.placeholder}
+    key={i}
   />
 ));
 

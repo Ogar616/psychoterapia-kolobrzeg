@@ -1,7 +1,7 @@
-$theme: bluee;
-
 $primary: #f8f8f8;
 $secondary: #eee;
+
+$theme: bluee;
 
 @if $theme == blue {
   $primary: lightblue;
