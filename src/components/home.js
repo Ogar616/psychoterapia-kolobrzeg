@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 
-import img from '../assets/happy.png'
+import Jumbotron from "./jumbotron";
+
+// import img from '../assets/happy.png'
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <>
+      {/* <div>
         <img className='img-fluid' src={img} alt='Gabinet Psychologiczny i Psychoterapeutyczny Edyta Łuców-Stepczyńska'/>
-      </div>
+      </div> */}
+       <Jumbotron />
+      
+      </>
+      
     );
   }
 }

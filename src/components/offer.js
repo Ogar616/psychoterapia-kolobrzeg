@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
+import ListItem from "./listItem";
+
 import listItems from "./data/offerItemsList";
 import diseasesList from "./data/diseasesItemsList";
-import ListItem from "./listItem";
 import runAnimation from "./data/runAnimation";
 
 const list = listItems.map((e, i) => <ListItem text={e.text} key={i} />);
