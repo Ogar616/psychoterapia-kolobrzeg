@@ -10,26 +10,7 @@ li {
 img {
   width: 100%;
 }
-.jumbo {
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  top: 5.6vh;
-  .name {
-    font-size: 1.62vw;
-    width: 57vw;
-    float: right;
-    position: relative;
-    top: 2.9em;
-  }
-  .address {
-    font-size: 1.62vw;
-    width: 45vw;
-    float: right;
-    position: relative;
-    top: 3.6em;
-  }
-}
+
 .description {
   background-color: $secondary;
   text-align: center;
