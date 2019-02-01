@@ -14,7 +14,7 @@ class About extends Component {
   }
   render() {
     return (
-      <>
+      <div className="container">
         <h1>O mnie </h1>
         <div className="col-md-6">
           <ul className="rolldown-list-small">{list}</ul>
@@ -22,7 +22,7 @@ class About extends Component {
         <div className="col-md-6">
           <img src={img} alt="Moje zdjęcie" />
         </div>
-      </>
+      </div>
     );
   }
 }
