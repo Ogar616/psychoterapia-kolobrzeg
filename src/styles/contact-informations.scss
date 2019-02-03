@@ -1,13 +1,13 @@
 .contact {
   margin: 2em 0 3em 0;
   text-align: center;
-  display: flex;
-  align-items: center;
-  align-content: center;
   line-height: 2em;
+  .contact1 {
+    padding-top: 1.5em;
+  }
   a[href^="tel:"]:before {
     content: "\260E";
     display: block;
     margin-right: 0.5em;
-}
+  }
 }
