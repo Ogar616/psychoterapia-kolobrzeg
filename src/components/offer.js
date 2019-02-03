@@ -20,7 +20,7 @@ class Offer extends Component {
         <ul className="rolldown-list">{list}</ul>
         <h3>Leczone choroby</h3>
         <ul className="rolldown-list-small">{list2}</ul>
-        <p className="description">
+        <p className="description bg-light">
           Forma pracy, w której spotkania odbywają się częściej nadaje ciągłość
           procesowi terapeutycznemu i stwarza stabilne, bezpieczne warunki do
           wnikliwszej pracy. Psychoterapia psychoanalityczna ma na celu pomoc

@@ -4,7 +4,7 @@
 .btn {
   margin-bottom: $margin-bottom;
 }
-ul{
+ul {
   margin-bottom: 5vh;
 }
 li {
@@ -14,10 +14,8 @@ img {
   width: 100%;
   margin-bottom: 5vh;
 }
-
 .description {
-  background-color: $secondary;
-  text-align: center;
+  text-align: justify;
   padding: 0.5em;
   margin-top: 2em;
   border-radius: 5px;
@@ -25,7 +23,5 @@ img {
 }
 iframe {
   width: 100%;
-}
-p{
-  margin-bottom: 5vh;
+  margin-bottom: 2em;
 }

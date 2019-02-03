@@ -14,7 +14,7 @@ class Psycho extends Component {
           <h1>O&nbsp;psychoterapii </h1>
         </div>
         <h3>Czym jest psychoterapia?</h3>
-        <p className="description">{text1}</p>
+        <p className="description bg-light">{text1}</p>
         <h3>Wskazania do podjęcia psychoterapii</h3>
         <ul className={"rolldown-list-small"}>{list2}</ul>
       </div>
