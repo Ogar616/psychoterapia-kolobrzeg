@@ -1,4 +1,4 @@
-export default [
+const itemsList = [
   {
     text:
       "Konsultacje psychologiczne - spotkania służące rozpoznaniu problemów i ustaleniu najlepszej formy pomocy dla zgłaszającej się osoby."
@@ -15,3 +15,44 @@ export default [
       "Psychoterapię psychoanalityczną (forma pracy, w której nie określa się na wstępie czasu trwania terapii. Odbywa się z częstotliwością minimum 2 x w tygodniu, oferowana jest osobom mającym wewnętrzną gotowość do pracy nad sobą, pragnącym zrozumieć i rozwiązać swoje konflikty wewnętrzne będące źródłem cierpienia."
   }
 ];
+
+const diseasesList = [
+  {
+    text: "depresja"
+  },
+  {
+    text: "niskie poczucie własnej wartości"
+  },
+  {
+    text: "nerwica natręctw"
+  },
+  {
+    text: "zaburzenia odżywiania"
+  },
+  {
+    text: "nerwica lękowa"
+  },
+  {
+    text: "anoreksja"
+  },
+  {
+    text: "choroby psychosomatyczne"
+  },
+  {
+    text: "stres"
+  },
+  {
+    text: "myśli samobójcze"
+  },
+  {
+    text: "bezsenność"
+  },
+  {
+    text: "kryzys w związku"
+  },
+  {
+    text: "lęki"
+  }
+];
+
+export { itemsList, diseasesList };

@@ -2,32 +2,32 @@ import React, { Component } from "react";
 
 import ListItem from "./listItem";
 
-import listItems from "./data/offerItemsList";
-import diseasesList from "./data/diseasesItemsList";
-import runAnimation from "./data/runAnimation";
+import { diseasesList, itemsList } from "./data/offerItemsList";
 
-const list = listItems.map((e, i) => <ListItem text={e.text} key={i} />);
-const list2 = diseasesList.map((e, i) => <ListItem text={e.text} key={i} />);
+const items = itemsList.map((e, i) => <ListItem text={e.text} key={i} />);
+const diseases = diseasesList.map((e, i) => <ListItem text={e.text} key={i} />);
 
 class Offer extends Component {
-  componentDidMount() {
-    runAnimation();
-  }
   render() {
     return (
       <div className="container">
-        <h1>Oferta </h1>
-        <ul className="rolldown-list">{list}</ul>
-        <h3>Leczone choroby</h3>
-        <ul className="rolldown-list-small">{list2}</ul>
-        <p className="description bg-light">
-          Forma pracy, w której spotkania odbywają się częściej nadaje ciągłość
-          procesowi terapeutycznemu i stwarza stabilne, bezpieczne warunki do
-          wnikliwszej pracy. Psychoterapia psychoanalityczna ma na celu pomoc
-          pacjentowi w badaniu i przepracowaniu głębokich, często nieświadomych
-          problemów emocjonalnych i umożliwia dalszy rozwój psychiczny,
-          pełniejsze życie i ustąpienie lub zmniejszenie siły objawów.
-        </p>
+        <section id="offer">
+          <div className="page-header">
+            <h1>Oferta </h1>
+          </div>
+          <ul className="rolldown-list">{items}</ul>
+          <h3>Leczone choroby</h3>
+          <ul className="rolldown-list-small">{diseases}</ul>
+          <p className="description bg-light">
+            Forma pracy, w której spotkania odbywają się częściej nadaje
+            ciągłość procesowi terapeutycznemu i stwarza stabilne, bezpieczne
+            warunki do wnikliwszej pracy. Psychoterapia psychoanalityczna ma na
+            celu pomoc pacjentowi w badaniu i przepracowaniu głębokich, często
+            nieświadomych problemów emocjonalnych i umożliwia dalszy rozwój
+            psychiczny, pełniejsze życie i ustąpienie lub zmniejszenie siły
+            objawów.
+          </p>
+        </section>
       </div>
     );
   }

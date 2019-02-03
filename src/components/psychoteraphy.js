@@ -10,13 +10,15 @@ class Psycho extends Component {
   render() {
     return (
       <div className="container">
-        <div className="page-header">
-          <h1>O&nbsp;psychoterapii </h1>
-        </div>
-        <h3>Czym jest psychoterapia?</h3>
-        <p className="description bg-light">{text1}</p>
-        <h3>Wskazania do podjęcia psychoterapii</h3>
-        <ul className={"rolldown-list-small"}>{list2}</ul>
+        <section id="psycho">
+          <div className="page-header">
+            <h1>O&nbsp;psychoterapii </h1>
+          </div>
+          <h3>Czym jest psychoterapia?</h3>
+          <p className="description bg-light">{text1}</p>
+          <h3>Wskazania do podjęcia psychoterapii</h3>
+          <ul className={"rolldown-list-small"}>{list2}</ul>
+        </section>
       </div>
     );
   }

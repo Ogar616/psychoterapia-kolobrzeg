@@ -1,27 +1,22 @@
 export default [
   {
     name: "O mnie",
-    link: "/about",
-    active: false
+    link: "#about",
   },
   {
     name: "Oferta",
-    link: "/offer",
-    active: false
+    link: "#offer",
   },
   {
     name: "O psychoterapii",
-    link: '/psychoteraphy',
-    active: false
+    link: '#psycho',
   },
   {
     name: "Jak dojadę",
-    link: "/location",
-    active: false
+    link: "#location",
   },
   {
     name: "Kontakt",
-    link: "/contact",
-    active: false
+    link: "#form",
   }
 ];

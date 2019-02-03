@@ -1,5 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
 #root {
   font-family: "Roboto";
+}
+section {
+  padding-top: 2rem;
 }
 .btn {
   margin-bottom: $margin-bottom;

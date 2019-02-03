@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import NavButton from "./navButton";
 import navLinks from "./data/navLinks";
@@ -23,31 +22,9 @@ class Nav extends Component {
       }
     };
   }
-  handleNavClick = i => {
-    navLinks.forEach(e => {
-      e.active = false;
-    });
-    navLinks[i].active = true;
-
-    document
-      .getElementsByClassName("navbar-collapse")[0]
-      .classList.remove("show");
-  };
-  handleBrandClick = () => {
-    navLinks.forEach(e => {
-      e.active = false;
-    });
-  };
   render() {
     const nav = navLinks.map((e, i) => {
-      return (
-        <NavButton
-          isActive={e.active}
-          handleClick={this.handleNavClick.bind(this, i)}
-          index={i}
-          key={i}
-        />
-      );
+      return <NavButton index={i} key={i} />;
     });
     const navLeft = nav.filter((e, i) => i < 3);
     const navRight = nav.filter((e, i) => i > 2);
@@ -68,10 +45,8 @@ class Nav extends Component {
               <span className="icon-bar" />
             </button>
             <li className="navbar-brand" onClick={this.handleBrandClick}>
-              <Link to="/home">
-                {" "}
-                <img className="logo" src={img} alt="logo" />
-              </Link>
+              {" "}
+              <img className="logo" src={img} alt="logo" />
             </li>
           </div>
           <div

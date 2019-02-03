@@ -20,24 +20,29 @@ class FormContainer extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row row-flex">
-          <form
-            className="form-group"
-            action="https://formspree.io/kamil.sobczyk@wp.pl"
-            method="POST"
-          >
-            {inputs}
-            <TextArea
-              title={"Twoja wiadomość"}
-              rows={6}
-              name={"Wiadomość do Ciebie"}
-              placeholder={"Tu wpisz swoją wiadomość"}
-            />
-            <Button title="Wyślij wiadomość">
-              <input type="submit" value="Send" />
-            </Button>
-          </form>
-        </div>
+        <section id="form">
+          <div className="page-header">
+            <h1>Napisz do mnie!</h1>
+          </div>
+          <div className="row-flex">
+            <form
+              className="form-group"
+              action="https://formspree.io/kamil.sobczyk@wp.pl"
+              method="POST"
+            >
+              {inputs}
+              <TextArea
+                title={"Twoja wiadomość"}
+                rows={6}
+                name={"Wiadomość do Ciebie"}
+                placeholder={"Tu wpisz swoją wiadomość"}
+              />
+              <Button title="Wyślij wiadomość">
+                <input type="submit" value="Send" />
+              </Button>
+            </form>
+          </div>
+        </section>
       </div>
     );
   }
